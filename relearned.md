@@ -1,0 +1,1 @@
+Counted items with an object, counts[key], check-if-exists pattern.
