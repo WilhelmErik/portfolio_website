@@ -24,7 +24,7 @@ export function Wrapper() {
         </li>
       </ul>
 
-      <p>Technologies:</p>
+      <h2>Skills</h2>
       <ul>
         <li>React</li>
         <li>Vue</li>
@@ -40,6 +40,14 @@ export function Wrapper() {
         className="px-4 py-2 bg-blue-500 text-white rounded-md"
       >
         View My LinkedIn
+      </a>
+      <a
+        href="https://github.com/wilhelmerik"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="px-4 py-2 bg-blue-500 text-white rounded-md"
+      >
+        View My Github
       </a>
     </div>
   );
