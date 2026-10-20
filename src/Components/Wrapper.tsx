@@ -4,13 +4,11 @@ export function Wrapper() {
       <h1>Albin Lundström</h1>
       <p>Welcome to my portfolio!</p>
       <p>
-        I'm a software developer passionate about creating innovative solutions using cutting edge technologies and
-        frameworks. I'm also interested and curious about security and 3D work in web development.
+        Frontend developer working with React, Vue and TypeScript. I'm also interested and curious about security and 3D work in web development.
       </p>
       <h2>Experience</h2>
       <h3>Frontend Intern, The Roll (Nov 2023 – May 2024)</h3>
 
-      <p>I have experience working with various technologies and frameworks. Such as:</p>
 
       <ul>
         <li>
@@ -19,7 +17,7 @@ export function Wrapper() {
         </li>
         <li>Implemented a new design system using Tailwind CSS and Quasar with a UI/UX developer.</li>
         <li>
-          Worked with a team of developers to implement new features and fix bugs in the application. and connect to the
+          Worked with a team of developers to implement new features and fix bugs in the application and connect to the
           backend services securely.
         </li>
       </ul>
