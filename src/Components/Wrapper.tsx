@@ -1,14 +1,33 @@
+interface Project {
+  title: string;
+  description: string;
+  tech: string[];
+}
+
+const projects: Project[] = [
+  {
+    title: "Interactive Library Platform",
+    description: "Made an interactive library platform with ratings login",
+    tech: ["React", "TypeScript"],
+  },
+  {
+    title: "FinTech Banking API",
+    description: "Made a banking api using JWT authentication for security",
+    tech: ["Node", "Express"],
+  },
+];
+
 export function Wrapper() {
   return (
     <div className="main">
       <h1>Albin Lundström</h1>
       <p>Welcome to my portfolio!</p>
       <p>
-        Frontend developer working with React, Vue and TypeScript. I'm also interested and curious about security and 3D work in web development.
+        Frontend developer working with React, Vue and TypeScript. I'm also interested and curious about security and 3D
+        work in web development.
       </p>
       <h2>Experience</h2>
       <h3>Frontend Intern, The Roll (Nov 2023 – May 2024)</h3>
-
 
       <ul>
         <li>
@@ -31,6 +50,16 @@ export function Wrapper() {
         <li>Quasar</li>
         <li>Tailwind CSS</li>
       </ul>
+      <h2>Projects</h2>
+
+      {projects.map((project) => (
+        <div key={project.title}>
+          <h3>{project.title}</h3>
+          <p>{project.description} </p>
+          <p>{project.tech.join(", ")} </p>
+          
+        </div>
+      ))}
       <a
         href="https://www.linkedin.com/in/albin-lundstrom"
         target="_blank"
