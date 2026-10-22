@@ -2,6 +2,7 @@ interface Project {
   title: string;
   description: string;
   tech: string[];
+  url?: string;
 }
 
 const projects: Project[] = [
@@ -57,7 +58,11 @@ export function Wrapper() {
           <h3>{project.title}</h3>
           <p>{project.description} </p>
           <p>{project.tech.join(", ")} </p>
-          
+          {project.url && (
+            <a href={project.url} target="_blank" rel="noopener noreferrer">
+              View {project.title} on github
+            </a>
+          )}
         </div>
       ))}
       <a
